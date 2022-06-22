@@ -3,7 +3,8 @@
 function add(num1, num2) {
   let total = 0;
   total = num1 + num2;
-  return total;
+  // return total;
+  console.log(total);
 }
 
 // Create a function that subtracts two numbers
@@ -11,7 +12,8 @@ function add(num1, num2) {
 function subtract(num1, num2) {
   let total = 0;
   total = num1 - num2;
-  return total;
+  // return total;
+  console.log(total);
 }
 
 // Create a function that multiplies two numbers
@@ -19,7 +21,8 @@ function subtract(num1, num2) {
 function multiply(num1, num2) {
   let total = 0;
   total = num1 * num2;
-  return total;
+  // return total;
+  console.log(total);
 }
 
 // Create a function that divides two numbers
@@ -27,7 +30,8 @@ function multiply(num1, num2) {
 function divide(num1, num2) {
   let total = 0;
   total = num1 / num2;
-  return total;
+  // return total;
+  console.log(total);
 }
 
 // Create a function that takes an operator and 2 numbers
@@ -46,3 +50,7 @@ function operate(num1, operator, num2) {
     divide(num1, num2);
   }
 }
+
+
+
+operate(100, "divide", 50);
