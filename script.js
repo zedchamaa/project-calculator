@@ -22,3 +22,10 @@ function multiply(num1, num2) {
   return total;
 }
 
+// Create a function that divides two numbers
+
+function divide(num1, num2) {
+  let total = 0;
+  total = num1 / num2;
+  return total;
+}
