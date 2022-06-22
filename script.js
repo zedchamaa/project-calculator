@@ -29,3 +29,20 @@ function divide(num1, num2) {
   total = num1 / num2;
   return total;
 }
+
+// Create a function that takes an operator and 2 numbers
+
+function operate(num1, operator, num2) {
+  if (operator === "plus") {
+    add(num1, num2);
+  }
+  else if (operator === "minus") {
+    subtract(num1, num2);
+  }
+  else if (operator === "multiply") {
+    multiply(num1, num2);
+  }
+  else if (operator === "divide") {
+    divide(num1, num2);
+  }
+}
