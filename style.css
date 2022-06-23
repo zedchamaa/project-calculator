@@ -53,6 +53,7 @@ body {
   color: white;
   font-size: 50px;
   border: 0.5px solid #434341;
+  cursor: pointer;
 }
 
 .operator-button {
@@ -62,6 +63,7 @@ body {
   color: white;
   font-size: 40px;
   border: 0.5px solid #434341;
+  cursor: pointer;
 }
 
 .number-button {
@@ -71,15 +73,17 @@ body {
   color: white;
   font-size: 35px;
   border: 0.5px solid #434341;
+  cursor: pointer;
 }
 
-.zero-button {
+#zero {
   width: 200px;
   height: 100px;
   background-color: #898685;
   color: white;
   font-size: 30px;
   border: 0.5px solid #434341;
+  cursor: pointer;
 }
 
 .dot-button {
@@ -89,6 +93,7 @@ body {
   color: white;
   font-size: 40px;
   border: 0.5px solid #434341;
+  cursor: pointer;
 }
 
 .footer {
