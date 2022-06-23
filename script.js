@@ -51,7 +51,7 @@ function operate(num1, operator, num2) {
 
 let displayValue = 0;
 
-// Create the functions that populate the display when a number button is clicked
+// Create the functions that populate the display screen when a number button is clicked
 
 const calculation = document.querySelector(".calculation");
 
