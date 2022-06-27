@@ -1,258 +1,255 @@
-// Store the first display round value
+// Create a variable num1 to store the first set of numbers added to the calculator
 
-let displayValueOne = 0;
+let num1;
 
-// Create the functions that populate the display screen when a number button is clicked
+// Create functions that push the clicked numbers to the display screen
 
-const calculation = document.querySelector(".calculation");
+const displayScreenOne = document.querySelector(".calculation-one");
 
-const buttonZero = document.getElementById("zero");
-buttonZero.addEventListener("click", populateDisplayZero);
+const numberZero = document.querySelector(".number-zero");
+numberZero.addEventListener("click", addZero);
 
-function populateDisplayZero() {
-  displayValueOne = calculation.innerText += 0;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+const numberOne = document.querySelector(".number-one");
+numberOne.addEventListener("click", addOne);
+
+const numberTwo = document.querySelector(".number-two");
+numberTwo.addEventListener("click", addTwo);
+
+const numberThree = document.querySelector(".number-three");
+numberThree.addEventListener("click", addThree);
+
+const numberFour = document.querySelector(".number-four");
+numberFour.addEventListener("click", addFour);
+
+const numberFive = document.querySelector(".number-five");
+numberFive.addEventListener("click", addFive);
+
+const numberSix = document.querySelector(".number-six");
+numberSix.addEventListener("click", addSix);
+
+const numberSeven = document.querySelector(".number-seven");
+numberSeven.addEventListener("click", addSeven);
+
+const numberEight = document.querySelector(".number-eight");
+numberEight.addEventListener("click", addEight);
+
+const numberNine = document.querySelector(".number-nine");
+numberNine.addEventListener("click", addNine);
+
+function addZero() {
+  let num = 0;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonOne = document.getElementById("one");
-buttonOne.addEventListener("click", populateDisplayOne);
-
-function populateDisplayOne() {
-  displayValueOne = calculation.innerText += 1;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addOne() {
+  let num = 1;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonTwo = document.getElementById("two");
-buttonTwo.addEventListener("click", populateDisplayTwo);
-
-function populateDisplayTwo() {
-  displayValueOne = calculation.innerText += 2;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addTwo() {
+  let num = 2;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonThree = document.getElementById("three");
-buttonThree.addEventListener("click", populateDisplayThree);
-
-function populateDisplayThree() {
-  displayValueOne = calculation.innerText += 3;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addThree() {
+  let num = 3;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonFour = document.getElementById("four");
-buttonFour.addEventListener("click", populateDisplayFour);
-
-function populateDisplayFour() {
-  displayValueOne = calculation.innerText += 4;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addFour() {
+  let num = 4;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonFive = document.getElementById("five");
-buttonFive.addEventListener("click", populateDisplayFive);
-
-function populateDisplayFive() {
-  displayValueOne = calculation.innerText += 5;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addFive() {
+  let num = 5;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonSix = document.getElementById("six");
-buttonSix.addEventListener("click", populateDisplaySix);
-
-function populateDisplaySix() {
-  displayValueOne = calculation.innerText += 6;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addSix() {
+  let num = 6;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonSeven = document.getElementById("seven");
-buttonSeven.addEventListener("click", populateDisplaySeven);
-
-function populateDisplaySeven() {
-  displayValueOne = calculation.innerText += 7;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addSeven() {
+  let num = 7;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonEight = document.getElementById("eight");
-buttonEight.addEventListener("click", populateDisplayEight);
-
-function populateDisplayEight() {
-  displayValueOne = calculation.innerText += 8;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addEight() {
+  let num = 8;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonNine = document.getElementById("nine");
-buttonNine.addEventListener("click", populateDisplayNine);
-
-function populateDisplayNine() {
-  displayValueOne = calculation.innerText += 9;
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addNine() {
+  let num = 9;
+  num1 = displayScreenOne.textContent += num;
+  console.log("This is num1 " + num1);
+  return num1;
 }
 
-const buttonDot = document.getElementById("dot");
-buttonDot.addEventListener("click", populateDisplayDot);
-
-function populateDisplayDot() {
-  displayValueOne = calculation.innerText += ".";
-  displayValueOne = parseFloat(displayValueOne);
-  updateNum1();
-  return displayValueOne;
+function addDecimalSymbol() {
+  document.getElementById("decimal").onclick = "";
+  let num = ".";
+  num1 = displayScreenOne.textContent += num;
+  num1 = parseFloat(num1);
+  console.log("This is num1 " + num1);
+  return num1;
+  document.getElementById("decimal").onclick = "addDecimalSymbol()";
 }
 
-function updateNum1() {
-  num1 = displayValueOne;
-  console.log("This is num1 ", num1);
-}
-
-// Create functions that store the operator selection
+// Display the operator on the screen and store its value
 
 let operator;
 
-function storeAdditionOperator() {
-  operator = "plus";
+// Create functions that push the clicked operator to the display screen and also store it in the operator variable
+
+function storePlusOperator() {
+  document.getElementById("addition").onclick = "";
+  let operator = "plus";
+  console.log(operator);
   return operator;
+  document.getElementById("addition").onclick = "storePlusOperator()";
 }
 
-function storeSubtractionOperator() {
-  operator = "minus";
+function storeMinusOperator() {
+  document.getElementById("subtraction").onclick = "";
+  let operator = "minus";
+  console.log(operator);
   return operator;
+  document.getElementById("subtraction").onclick = "storeMinusOperator()";
 }
 
 function storeMultiplicationOperator() {
-  operator = "multiply";
+  document.getElementById("multiplication").onclick = "";
+  let operator = "multiply";
+  console.log(operator);
   return operator;
+  document.getElementById("multiplication").onclick = "storeMultiplicationOperator()";
 }
 
 function storeDivisionOperator() {
-  operator = "divide";
+  document.getElementById("division").onclick = "";
+  let operator = "divide";
+  console.log(operator);
   return operator;
+  document.getElementById("division").onclick = "storeDivisionOperator()";
 }
 
-// Store the second display round value 
+// Create a variable num2 to store the set set of numbers added to the calculator
 
-let displayValueTwo = 0;
+let num2;
 
-// Create the functions that populate the display screen when a number button is clicked
+// Create functions that push the clicked numbers to the display screen
 
-buttonZero.addEventListener("click", populateDisplayZero);
+const displayScreenTwo = document.querySelector(".calculation-two");
+numberZero.addEventListener("click", addZero);
+numberOne.addEventListener("click", addOne);
+numberTwo.addEventListener("click", addTwo);
+numberThree.addEventListener("click", addThree);
+numberFour.addEventListener("click", addFour);
+numberFive.addEventListener("click", addFive);
+numberSix.addEventListener("click", addSix);
+numberSeven.addEventListener("click", addSeven);
+numberEight.addEventListener("click", addEight);
+numberNine.addEventListener("click", addNine);
 
-function populateDisplayZero() {
-  displayValueTwo = calculation.innerText += 0;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addZero() {
+  let num = 0;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonOne.addEventListener("click", populateDisplayOne);
-
-function populateDisplayOne() {
-  displayValueTwo = calculation.innerText += 1;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addOne() {
+  let num = 1;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonTwo.addEventListener("click", populateDisplayTwo);
-
-function populateDisplayTwo() {
-  displayValueTwo = calculation.innerText += 2;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addTwo() {
+  let num = 2;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonThree.addEventListener("click", populateDisplayThree);
-
-function populateDisplayThree() {
-  displayValueTwo = calculation.innerText += 3;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addThree() {
+  let num = 3;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonFour.addEventListener("click", populateDisplayFour);
-
-function populateDisplayFour() {
-  displayValueTwo = calculation.innerText += 4;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addFour() {
+  let num = 4;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonFive.addEventListener("click", populateDisplayFive);
-
-function populateDisplayFive() {
-  displayValueTwo = calculation.innerText += 5;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addFive() {
+  let num = 5;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonSix.addEventListener("click", populateDisplaySix);
-
-function populateDisplaySix() {
-  displayValueTwo = calculation.innerText += 6;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addSix() {
+  let num = 6;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonSeven.addEventListener("click", populateDisplaySeven);
-
-function populateDisplaySeven() {
-  displayValueTwo = calculation.innerText += 7;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addSeven() {
+  let num = 7;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonEight.addEventListener("click", populateDisplayEight);
-
-function populateDisplayEight() {
-  displayValueTwo = calculation.innerText += 8;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addEight() {
+  let num = 8;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonNine.addEventListener("click", populateDisplayNine);
-
-function populateDisplayNine() {
-  displayValueTwo = calculation.innerText += 9;
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
+function addNine() {
+  let num = 9;
+  num2 = displayScreenTwo.textContent += num;
+  console.log("This is num2 " + num2);
+  return num2;
 }
 
-buttonDot.addEventListener("click", populateDisplayDot);
-
-function populateDisplayDot() {
-  displayValueTwo = calculation.innerText += ".";
-  displayValueTwo = parseFloat(displayValueTwo);
-  updateNum2();
-  return displayValueTwo;
-}
-
-function updateNum2() {
-  num2 = displayValueTwo;
-  console.log("This is num2 ", num2);
+function addDecimalSymbol() {
+  document.getElementById("decimal").onclick = "";
+  let num = ".";
+  num2 = displayScreenTwo.textContent += num;
+  num2 = parseFloat(num2);
+  console.log("This is num2 " + num2);
+  return num2;
+  document.getElementById("decimal").onclick = "addDecimalSymbol()";
 }
 
 // Create a function that takes an operator and 2 numbers

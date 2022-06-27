@@ -32,7 +32,15 @@ body {
   background-color: #5E5A59;
 }
 
-.calculation {
+.calculation-one {
+  display: flex;
+  padding-right: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.calculation-two {
   display: flex;
   padding-right: 10px;
   font-size: 50px;

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Document</title>
+  <title>Project Calculator (by zedchamaa) - The Odin Project</title>
 </head>
 <body>
   <div class="main-container">
     <div class="calculator-container">
       <div class="display-screen">
-        <div class="calculation"></div>
+        <div class="calculation-one calculation-two"></div>
       </div>
       <div class="row">
         <div>
@@ -24,13 +24,13 @@
       </div>
       <div class="row">
         <div>
-          <button class="number-button" id="seven">7</button>
+          <button class="number-button number-seven" value="7">7</button>
         </div>
         <div>
-          <button class="number-button" id="eight">8</button>
+          <button class="number-button number-eight" value="8">8</button>
         </div>
         <div>
-          <button class="number-button" id="nine">9</button>
+          <button class="number-button number-nine" value="9">9</button>
         </div>
         <div>
           <button class="operator-button" id="multiplication" onclick="storeMultiplicationOperator()">×</button>
@@ -38,38 +38,38 @@
       </div>
       <div class="row">
         <div>
-          <button class="number-button" id="four">4</button>
+          <button class="number-button number-four" value="4">4</button>
         </div>
         <div>
-          <button class="number-button" id="five">5</button>
+          <button class="number-button number-five" value="5">5</button>
         </div>
         <div>
-          <button class="number-button" id="six">6</button>
+          <button class="number-button number-six" value="6">6</button>
         </div>
         <div>
-          <button class="operator-button" id="subtraction" onclick="storeSubtractionOperator()">−</button>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <button class="number-button" id="one">1</button>
-        </div>
-        <div>
-          <button class="number-button" id="two">2</button>
-        </div>
-        <div>
-          <button class="number-button" id="three">3</button>
-        </div>
-        <div>
-          <button class="operator-button" id="addition" onclick="storeAdditionOperator()">+</button>
+          <button class="operator-button" id="subtraction" onclick="storeMinusOperator()">−</button>
         </div>
       </div>
       <div class="row">
         <div>
-          <button class="number-button" id="zero">0</button>
+          <button class="number-button number-one" value="1">1</button>
         </div>
         <div>
-          <button class="dot-button" id="dot">.</button>
+          <button class="number-button number-two" value="2">2</button>
+        </div>
+        <div>
+          <button class="number-button number-three" value="3">3</button>
+        </div>
+        <div>
+          <button class="operator-button" id="addition" onclick="storePlusOperator()">+</button>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <button class="number-button number-zero" id="zero" value="0">0</button>
+        </div>
+        <div>
+          <button class="number-button decimal-symbol" id="decimal" onclick="addDecimalSymbol()">.</button>
         </div>
         <div>
           <button class="operator-button" id="equal">=</button>
