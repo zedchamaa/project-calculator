@@ -7,3 +7,10 @@ function clearScreen() {
 function display(value) {
   document.getElementById("result").value += value;
 }
+
+// Calculate the result and display it on the screen
+function calculate() {
+  const screenValue = document.getElementById("result").value;
+  const calculateResult = eval(screenValue);
+  document.getElementById("result").value = calculateResult;
+}
