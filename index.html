@@ -11,68 +11,70 @@
 <body>
   <div class="main-container">
     <div class="calculator-container">
-      <div class="display-screen">
-        <div class="calculation-one calculation-two"></div>
+      <div class="calculator-screen">
+        <input class="display-box" type="text" id="result" value="" disabled />
       </div>
-      <div class="row">
-        <div>
-          <button class="clear-button">CLEAR</button>
+      <div class="calculator-keys">
+        <div class="row">
+          <div>
+            <input class="clear-button" type="button" value="Clear" onclick="clearScreen()" id="btn" />
+          </div>
+          <div>
+            <input class="operator-button" type="button" value="&divide;" onclick="display('/')" />
+          </div>
         </div>
-        <div>
-          <button class="operator-button" id="division" onclick="storeDivisionOperator()">÷</button>
+        <div class="row">
+          <div>
+            <input class="number-button" type="button" value="7" onclick="display('7')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="8" onclick="display('8')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="9" onclick="display('9')" />
+          </div>
+          <div>
+            <input class="operator-button" type="button" value="&times;" onclick="display('*')" />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div>
-          <button class="number-button number-seven" value="7">7</button>
+        <div class="row">
+          <div>
+            <input class="number-button" type="button" value="4" onclick="display('4')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="5" onclick="display('5')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="6" onclick="display('6')" />
+          </div>
+          <div>
+            <input class="operator-button" type="button" value="-" onclick="display('-')" />
+          </div>
         </div>
-        <div>
-          <button class="number-button number-eight" value="8">8</button>
+        <div class="row">
+          <div>
+            <input class="number-button" type="button" value="1" onclick="display('1')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="2" onclick="display('2')" />
+          </div>
+          <div>
+            <input class="number-button" type="button" value="3" onclick="display('3')" />
+          </div>
+          <div>
+            <input class="operator-button" type="button" value="+" onclick="display('+')" />
+          </div>
         </div>
-        <div>
-          <button class="number-button number-nine" value="9">9</button>
-        </div>
-        <div>
-          <button class="operator-button" id="multiplication" onclick="storeMultiplicationOperator()">×</button>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <button class="number-button number-four" value="4">4</button>
-        </div>
-        <div>
-          <button class="number-button number-five" value="5">5</button>
-        </div>
-        <div>
-          <button class="number-button number-six" value="6">6</button>
-        </div>
-        <div>
-          <button class="operator-button" id="subtraction" onclick="storeMinusOperator()">−</button>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <button class="number-button number-one" value="1">1</button>
-        </div>
-        <div>
-          <button class="number-button number-two" value="2">2</button>
-        </div>
-        <div>
-          <button class="number-button number-three" value="3">3</button>
-        </div>
-        <div>
-          <button class="operator-button" id="addition" onclick="storePlusOperator()">+</button>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <button class="number-button number-zero" id="zero" value="0">0</button>
-        </div>
-        <div>
-          <button class="number-button decimal-symbol" id="decimal" onclick="addDecimalSymbol()">.</button>
-        </div>
-        <div>
-          <button class="operator-button" id="equal">=</button>
+        <div class="row">
+          <div>
+            <input class="number-button" id="zero" type="button" value="0" onclick="display('0')" />
+          </div>
+          <div>
+            <input class="decimal" type="button" value="." onclick="display('.')" />
+          </div>
+          <div>
+            <input class="operator-button" type="button" value="=" onclick="calculate()" />
+          </div>
         </div>
       </div>
     </div>
