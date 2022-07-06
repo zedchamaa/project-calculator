@@ -2,3 +2,8 @@
 function clearScreen() {
   document.getElementById("result").value = "";
 }
+
+// Display values on the screen based on what was clicked
+function display(value) {
+  document.getElementById("result").value += value;
+}
